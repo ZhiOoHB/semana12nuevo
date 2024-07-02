@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    min-height: 110vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.2)), url('FLORES.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    user-select: none;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.863);
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.header .navigation ul li {
+    float: left;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 7px;
+    display: block;
+    transition: all .2s;
+}
+
+.header .navigation ul li a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all .4s;
+}
+
+.header .navigation ul li a:hover {
+    background-color: #f01e3e;
+}
+
+.header .navigation ul li ul {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.863);
+    display: none;
+}
+
+.header .navigation ul li ul li a {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.header .navigation ul li ul li ul {
+    position: absolute;
+    top: 0;
+    right: 300px;
+}
+
+.header .navigation ul li ul li {
+    width: 100%;
+    padding-left: 30px;
+}
+
+.header .navigation ul li:hover>ul {
+    display: initial;
+}
+
+#toggle,
+.header label {
+    display: none;
+    cursor: pointer;
+}
+
+img {
+    width: 55px;
+    height: 45px;
+}
+
+
+@media(max-width: 2950px) {
+    .header label {
+        display: initial;
+    }
+
+    .header {
+        padding: 20px 10px;
+    }
+
+    .header .navigation {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.863);
+        display: none;
+    }
+
+    .header .navigation ul li {
+        width: 100%;
+    }
+
+    .header .navigation ul li a {
+        padding: 8px 30px 8px 10%;
+    }
+
+    .header .navigation ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .header .navigation ul li ul li {
+        background-color: rgba(255, 255, 255, 0.20);
+    }
+
+    .header .navigation ul li ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .header .navigation ul li ul li span {
+        padding: 4px 10px;
+        font-size: 10px;
+    }
+
+    #toggle:checked~.navigation {
+        display: block;
+    }
+}
+
+
+/* Fin - Cabeza */
+
+.content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.table-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+ol,
+ul {
+    text-align: left;
+}
+
+h1 {
+    font-size: 35px;
+    flex-direction: column;
+    margin-top: 130px;
+    text-align: center;    
+}

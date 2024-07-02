@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <link rel="stylesheet" href="../css/boton.css">
+    <style>
+        @font-face{
+            font-family: Roboto_r;
+            src: url('../font/Roboto/Roboto-Regular.ttf');
+        }
+        *{
+            margin: 0;
+        }
+        .element{
+            background-color: rgb(0, 0, 0);
+            width: 250px;
+            height: 250px;
+            margin: 60px auto;
+        /*  Transformacion */
+        /*  transform: translateX(100px);*/
+        /*  transform: translateY(100px);*/
+        /*  transform: translateX(100px) translateY(100px);*/
+        /*  transform: translate(100px,100px); */
+        /*  Rotacion */
+        /*  transform: rotate(30deg);*/
+        }
+        .element:hover{
+            background-color: rgb(255, 215, 215);
+        /*  transform: rotate(1turn); */
+            transition: .9s;
+            transform: scale(1.5);
+        }
+        .element:not(:hover){
+            transition: .5s;
+        }
+        .element h3{
+            font-family: Roboto_r, Arial, Helvetica;
+            text-align: center;
+            color: rgb(170, 110, 226);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="element">
+        <h3>Uso del transform</h3>
+        <img src="../img/gato.png" width="130" style="margin-left: 60px">
+    </div>
+
+    <button><a href="../../index.html">Volver</a></button>
+</body>
+</html>

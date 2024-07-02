@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 02</title>
+    <link rel="stylesheet" href="../css/boton.css">
+    <style>
+        @font-face{
+            font-family: 'Roboto_r';
+            src: url(../font/Roboto/Roboto-Thin.ttf);
+        }
+        * {
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: rgb(41, 41, 41);
+            font-family: 'Roboto_r';
+            text-align: center;
+        }
+        .titulo{
+            color: rgb(255, 82, 19);
+            font-size: 50px;
+            text-shadow: 5px 5px 10px rgb(255, 155, 62);
+            margin-top: 25px;
+        }
+        .cuerpo{
+            width: 800px;
+        }
+        p{
+            background-color: rgb(21, 125, 151);
+            color: white;
+            border-radius: 15px;
+            font-size: 35px;
+        }
+        nav{
+            background-color: white;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            width: 780px;
+        }
+        section {
+            background-color: rgb(21, 125, 151);
+            margin: 15px auto;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            height: 210px; width: 370px;
+        }
+
+        article p{
+            background-color: rgb(13, 75, 90);
+            height: 135px; width: 350px;
+        }
+
+        aside p{
+            margin: 15px auto;
+            height: 210px; width: 370px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 class="titulo">Estructura Semántica con HTML<sub>5</sub> y CSS<sub>3</sub></h1>
+    <div class="cuerpo">
+        <header style="margin: 10px;">
+            <p>Encabezado</p>
+        </header>
+        <p style="margin: 10px;">menú</p>
+
+        <nav style="margin: 10px;">
+            <section>
+                <p style="margin: 6px;">sección</p>
+                <article>
+                    <p style="padding-top: 10px;">articulos</p>
+                </article>
+            </section>
+            <aside>
+                <p>aside</p>
+            </aside>
+        </nav>
+
+        <footer style="margin: 10px;">
+            <p>Pie de página</p>
+        </footer>
+    </div>
+
+    <button><a href="../../index.html">Volver</a></button>
+</body>
+
+</html>
